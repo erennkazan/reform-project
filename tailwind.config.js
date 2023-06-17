@@ -12,6 +12,9 @@ module.exports = {
         // => @media (min-width: 1280px) { ... }
       },
       extend: {
+        fontFamily: {
+          'font-family': ['Montserrat', 'sans-serif'],
+        },
       },
     },
     plugins: [
