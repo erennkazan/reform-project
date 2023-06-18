@@ -1,3 +1,17 @@
 .button-bg-color{
     background-color: #1F458E;
 }
+.button-color{
+    background-color: #91303F;
+}
+.button-ml{
+    margin-left: 80px;
+}
+.text-empty {
+    color: transparent;
+    font-size: 130px;
+  }
+.bg-gradiend{
+    background: rgb(34,76,144);
+    background: linear-gradient(266deg, rgba(34,76,144,1) 19%, rgba(17,38,78,1) 100%);
+}   

@@ -20,15 +20,17 @@
     
     <!-- Tailwind Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <link href="./node_modules/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navbar Component Start -->
     <nav class="w-full h-screen bg-cover bg-no-repeat" style="background-image: url('img/drillbit.jpg'); background-attachment: fixed;">
-        <div class="container mx-auto flex items-center justify-between">
+        <header class="container mx-auto flex items-center justify-between">
           <div class="flex items-center mt-3 mr-auto">
             <a class="flex" href="">
                 <img src="img/logo.svg" alt="Logo">
-                <p class="ml-2 text-white text-2xl">
+                <p class="ml-2 text-white text-2xl leading">
                 reform<br>kalıp
                 </p>
             </a>
@@ -48,12 +50,79 @@
           <div class="flex items-center ml-auto">
             <img class="w-8" src="img/search.svg" alt="Arama İkonu">
             <button class="flex items-center text-white button-bg-color p-8 ml-8 ">
-              <img src="img/call.png" alt="Telefon İkonu">
-              <p class="ml-2">İletişime Geçin</p>
+              <img src="img/call.png">
+              <p class="ml-2">İLETİŞİME GEÇİN</p>
             </button>
           </div>
-        </div>
+        </header>
+        <section class="container flex justify-between mt-24 mx-auto">
+            <div class="flex ml-8">
+                <div>
+                    <h2 class="text-4xl font-bold text-white">Sektöre Kalıbımızı <br> Bastık</h2>
+                    <p class="text-white text-s font-bold mt-4">
+                        Üretim ve kullanım safhalarında çıkabilecek olan her türlü <br>
+                        problemi önceden analiz edip, müşterilerimize <br>
+                        “Üstün Kalite ve Kusursuz Memnuniyet” <br>
+                        sağlayabilmeyi temel prensibimiz olarak benimsiyoruz.
+                    </p>
+                </div>
+                <div class="flex items-end button-ml ">
+                    <div>
+                        <button class="button-bg-color text-white p-3 w-full">
+                            <img class="w-8 h-6" src="img/arrow.svg">
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button-color text-white p-3 w-full">
+                            KURUMSAL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto bg-gradiend mt-8">
+            <div class="flex">
+                <div class="flex flex-col m-4 p-4">
+                    <span class="text-white text-sm">01</span>
+                    <span class="text-white  font-bold mt-2">Kalıp Üretimi</span>
+                    <p class="text-white mt-2 text-sm">Lorem ipsum dolor sit amet, consetetur<br>
+                       sadipscing elitr, sed diam nonumy eirmod <br>
+                       tempor invidunt ut labore et dolore magna<br>
+                        aliquyam erat, sed diam voluptua. At vero eos et <br>
+                       </p>
+                    <button class="button-color mt-4 w-16 p-4">
+                      <img class="w-8 h-6" src="img/arrow.svg">
+                    </button>
+                    <button>
+                      İNCELE
+                    </button>
+                  </div>
+                  <div>
+                    <span>01</span>
+                    <h3>Kalıp Üretimi</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur<br>
+                       sadipscing elitr, sed diam nonumy eirmod <br>
+                       tempor invidunt ut labore et dolore magna<br>
+                        aliquyam erat, sed diam voluptua. At vero eos et <br>
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    <button><img class="w-8 h-6" src="img/arrow.svg">İNCELE</button>
+                  </div>
+                  <div>
+                    <span>01</span>
+                    <h3>Kalıp Üretimi</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur<br>
+                       sadipscing elitr, sed diam nonumy eirmod <br>
+                       tempor invidunt ut labore et dolore magna<br>
+                        aliquyam erat, sed diam voluptua. At vero eos et <br>
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    <button><img class="w-8 h-6" src="img/arrow.svg">İNCELE</button>
+                  </div>
+            </div>
+        </section>
     </nav>
     <!-- Navbar Component End-->
+<script src="tailwind.config.js"></script>
+<script src="./node_modules/alpinejs/dist/alpine.js"></script>
+<script src="https://cdn.tailwindcss.com/2.2.19"></script>
 </body>
 </html>
