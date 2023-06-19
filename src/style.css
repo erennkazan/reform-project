@@ -34,3 +34,7 @@
 .top{
    margin-top: 180px;
 }
+.footer-bg-color{
+    background: rgb(34,76,144);
+    background: linear-gradient(25deg, rgba(34,76,144,1) 10%, rgba(0,35,91,1) 100%);
+}
