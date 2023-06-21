@@ -38,3 +38,22 @@
     background: rgb(34,76,144);
     background: linear-gradient(25deg, rgba(34,76,144,1) 10%, rgba(0,35,91,1) 100%);
 }
+button[aria-current="true"] {
+    background-color: #91303F; 
+    height: 7px;
+    width: 64px;
+    
+ }
+button[aria-current="false"] {
+    background-color: #EDEDED;
+    height: 7px;
+    width: 20px;
+  }
+ [data-carousel-item] img {
+  margin-right: 10px; 
+}
+
+[data-carousel-item] img:last-child {
+  margin-right: 0; 
+}
+  
