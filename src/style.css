@@ -56,4 +56,10 @@ button[aria-current="false"] {
 [data-carousel-item] img:last-child {
   margin-right: 0; 
 }
-  
+.reform-text{
+    color: transparent;
+    font-size: 130px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+    opacity: .2;
+}
