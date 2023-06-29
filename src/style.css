@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
   }
+
 .button-bg-color{
     background-color: #1F458E;
 }
@@ -31,11 +32,8 @@ body {
     background: rgb(34,76,144);
     background: linear-gradient(266deg, rgba(34,76,144,1) 19%, rgba(17,38,78,1) 100%);
 }
-.section{
-    margin-top: 6rem;
-}   
 .top{
-   margin-top: 180px;
+   margin-top: 150px;
 }
 .footer-bg-color{
     background: rgb(34,76,144);
@@ -52,6 +50,7 @@ button[aria-current="false"] {
     height: 7px;
     width: 20px;
   }
+
  [data-carousel-item] img {
   margin-right: 10px; 
 }
@@ -59,7 +58,16 @@ button[aria-current="false"] {
 [data-carousel-item] img:last-child {
   margin-right: 0; 
 }
+button[data-collapse-toggle="navbar-sticky"]:focus,
+button[data-collapse-toggle="navbar-sticky"]:active {
+  outline: none;
+  border: none;
+}
 .reform-text{
     -webkit-text-stroke: 1px white;
-    opacity: .2;
+    opacity: .1;
 }
+.scroll-text {
+    color: white; /* Başlangıç rengi */
+    transition: color 0.3s ease; /* Renk değişim animasyonu */
+  }

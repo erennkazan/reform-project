@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="src/style.css">
       <link rel="stylesheet" href="tailwind.css">
       <link rel="stylesheet" href="dist/output.css">
-      <!-- Aos Css-->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <!-- Aos Css-->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <!-- Google Fonts Start -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,48 +22,35 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
       <!-- Flowbite Library-->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+     
    </head>
    <body>
       <!-- Navbar Component Start -->
       <nav class="w-full md:w-full sm:w-full lg:w-full  bg-cover bg-no-repeat" style="background-image: url('img/drillbit.jpg'); background-size: 100% 720px;">
          <!-- Header Start --> 
-
-         <!-- component -->
-         <nav class="container mx-auto relative  flex justify-between items-center ">
-            <div class="flex items-center mt-3 mr-auto">
-               <a class="flex" href="">
-                  <img src="img/logo.svg" alt="Logo">
-                  <p class="ml-2 text-white text-2xl tracking-widest">
-                     reform<br>kalıp
-                  </p>
-               </a>
-            </div>
-            <div class="lg:hidden">
-               <button class="navbar-burger flex items-center text-blue-600 p-3">
-                  <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                     <title>Mobile menu</title>
-                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+         <nav class="fixed top-0 left-0 w-full z-20">
+            <div class="container mx-auto  flex flex-wrap items-center justify-between">
+              <a href="#" class="flex items-center">
+                <div class="flex items-center mt-3 mr-auto">
+                  <a class="flex" href="">
+                    <img src="img/logo.svg" alt="Logo">
+                    <p class="ml-2 text-white text-2xl tracking-widest scroll-text">
+                      reform<br>kalıp
+                    </p>
+                  </a>
+                </div>
+              </a>
+              <div class="flex md:order-2">
+               <div class="flex items-center ml-auto hidden xl:flex 2xl:flex  lg:flex xl:flex">
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                     <g id="SVGRepo_iconCarrier">
+                        <circle cx="10" cy="10" r="6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+                        <path d="M14.5 14.5L19 19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </g>
                   </svg>
-               </button>
-            </div>
-            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-               <li class="text-white font-medium hover:text-blue-500 text-xs ml-auto"><a class="#" href="">KURUMSAL</a></li>
-                     <li class="text-white font-medium text-xs ml-8"><a href="#">KALIP ÜRETİM</a></li>
-                     <li class="text-white font-medium text-xs ml-8"><a href="#">PRESHANE</a></li>
-                     <li class="text-white font-medium text-xs ml-8"><a href="#">MAKİNE PARKI</a></li>
-                     <li class="text-white font-medium text-xs ml-8"><a href="#">İLETİŞİM</a></li>
-            </ul>
-            <div class="flex items-center ml-auto hidden xl:flex 2xl:flex  lg:flex xl:flex">
-               <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                     <circle cx="10" cy="10" r="6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-                     <path d="M14.5 14.5L19 19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </g>
-               </svg>
-               <a href="#">
-                  <button class="flex items-center text-white button-bg-color p-8 ml-8  ">
+                  <button type="button" class="flex items-center text-white bg-blue-900 p-8 ml-8">
                      <svg width="24px" height="24px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -82,61 +69,31 @@
                      </svg>
                      <p class="ml-2 font-bold text-base">İLETİŞİME GEÇİN</p>
                   </button>
-               </a>
+               </div>
+               
+              
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center text-sm  rounded-lg md:hidden" aria-controls="navbar-sticky" aria-expanded="false">
+                  <svg class="w-6 h-6 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden mx-auto w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col mt-4 md:p-0 md:mt-0 md:flex-row md:space-x-8">
+                     <li class="text-white font-medium text-xl ml-8 lg:text-xs scroll-text hover:text-blue-500"><a class="#" href="">KURUMSAL</a></li>
+                     <li class="text-white font-medium text-xl ml-8 lg:text-xs scroll-text hover:text-blue-500"><a href="#">KALIP ÜRETİM</a></li>
+                     <li class="text-white font-medium text-xl ml-8 lg:text-xs scroll-text hover:text-blue-500"><a href="#">PRESHANE</a></li>
+                     <li class="text-white font-medium text-xl ml-8 lg:text-xs scroll-text hover:text-blue-500"><a href="#">MAKİNE PARKI</a></li>
+                     <li class="text-white font-medium text-xl ml-8 lg:text-xs scroll-text hover:text-blue-500"><a href="#">İLETİŞİM</a></li>
+                </ul>
+              </div>
             </div>
-         </nav>
-	<div class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-			<div class="flex items-center mb-8">
-				<a class="mr-auto text-3xl font-bold leading-none" href="#">
-               <img src="img/logo.svg" alt="Logo">
-				</a>
-				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
-				</button>
-			</div>
-			<div>
-				<ul>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">KURUMSAL</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">KALIP ÜRETİM</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">PRESHANE</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">MAKİNE PARKI</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">İLETİŞİM</a>
-					</li>
-				</ul>
-			</div>
-			<div class="mt-auto">
-				<div class="pt-6">
-					<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
-					<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
-				</div>
-				<p class="my-4 text-xs text-center text-gray-400">
-					<span>Copyright © 2021</span>
-				</p>
-			</div>
-		</nav>
-	</div>
-
-
-
-         
+          </nav>
+          
          <!-- Header End -->
          <!-- --> 
-         <section class="container flex flex-col justify-between section mx-auto w-full relative"  data-aos="fade-right">
-            
-            <div class="flex flex-col justify-center items-center lg:flex lg:flex-row lg:items-end lg:justify-start">
+         <section class="container flex flex-col justify-between mx-auto w-full relative"  data-aos="fade-right">
+            <div class="flex flex-col justify-center items-center mt-64 lg:flex lg:flex-row lg:items-end lg:justify-start">
                <div class="">
                   <h2 class="text-4xl font-bold text-white text-center lg:text-start">Sektöre Kalıbımızı <br> Bastık</h2>
                   <p class="text-white text-s font-medium mt-4 text-center p-4 lg:text-start lg:p-0">
@@ -177,7 +134,7 @@
             </div>
          </section>
          <div class="absolute w-full mx-auto top-0 left-0" data-aos="fade-right">
-            <p class="text-8xl text-center text-transparent font-bold reform-text mt-36 lg:text-9xl lg:flex lg:mt-40 xl:flex xl:ml-64">REFORM KALIP</p>
+            <p class="text-8xl text-center text-transparent font-bold reform-text mt-48 mx-auto  lg:ml-96 lg:text-9xl lg:flex lg:mt-52 xl:flex ">REFORM KALIP</p>
          </div>
          <!-- Herosection Start --> 
          <section class="container mx-auto  bg-gradiend top"  data-aos="fade-up">
@@ -331,8 +288,8 @@
       </main>
       <!-- Main End --> 
       <!-- Video component Start-->
-      <article class="container mx-auto" data-aos="flip-down">
-         <div class="relative flex mx-auto justify-center items-center section">
+      <article class="container mx-auto mt-36" data-aos="flip-down">
+         <div class="relative flex mx-auto justify-center items-center">
             <div class="relative ">
                <div class="absolute inset-0  button-color opacity-20 z-10"></div>
                <img src="img/pressmachine.png" class="relative">
@@ -363,7 +320,7 @@
       </article>
       <!-- Video component End-->
       <!-- Mold production Area Start-->
-      <article class="container mx-auto mt-16 lg:mt-16 md:mt-16" data-aos="zoom-in-up">
+      <article class="container mx-auto mt-16 lg:mt-24 md:mt-16" data-aos="zoom-in-up">
          <div>
             <span class="main-text font-bold flex justify-center lg:flex lg:justify-start">Kalıp Üretim</span>
          </div>
@@ -381,7 +338,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg lg:w-1/2 p-8 lg:flex-grow">
+               <td class="border font-bold text-lg lg:w-1/2 p-8 lg:flex-grow" data-aos="zoom-in">
                   Transfer saç kalıpları
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -392,7 +349,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow ">
+               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow " data-aos="zoom-in">
                   Prograsif saç kalıpları
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -403,7 +360,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow ">
+               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow " data-aos="zoom-in">
                   CNC ve Telerzyon’da <br>
                   parça imalatı
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +374,7 @@
                </td>
             </tr>
             <tr class="flex flex-col ml-4 mr-4 lg:flex lg:flex-row lg:ml-0 lg:mr-0">
-               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow">
+               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow" data-aos="zoom-in">
                   Saç şekillendirme 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -428,7 +385,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow">
+               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow" data-aos="zoom-in">
                   Makina imalatı 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -439,7 +396,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow">
+               <td class="border font-bold text-lg p-8 lg:w-1/2 lg:flex-grow" data-aos="zoom-in">
                   Beyaz eşya sektörü 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -450,7 +407,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg lg:w-1/2 p-8 lg:flex-grow">
+               <td class="border font-bold text-lg lg:w-1/2 p-8 lg:flex-grow" data-aos="zoom-in">
                   Otomotiv Sektörü 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -463,7 +420,7 @@
                </td>
             </tr>
             <tr class="flex flex-col ml-4 mr-4 lg:flex lg:flex-row lg:ml-0 lg:mr-0">
-               <td class="border font-bold text-lg p-8 lg:w-1/3 lg:flex-grow">
+               <td class="border font-bold text-lg p-8 lg:w-1/3 lg:flex-grow" data-aos="zoom-in">
                   Savunma sanayi 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -474,7 +431,7 @@
                      </g>
                   </svg>
                </td>
-               <td class="border font-bold text-lg p-8 lg:flex-grow lg:w-1/3">
+               <td class="border font-bold text-lg p-8 lg:flex-grow lg:w-1/3" data-aos="zoom-in">
                   Gıda sektörü 
                   <svg class="mt-10" fill="#00235B" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -485,7 +442,7 @@
                      </g>
                   </svg>
                </td>
-               <th class="p-8 text-xs flex flex-col items-center lg:items-start lg:flex-grow lg:w-4/6" colspan="2">
+               <th class="p-8 text-xs flex flex-col items-center lg:items-start lg:flex-grow lg:w-4/6" colspan="2" data-aos="zoom-in">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br>
                   diam nonumy eirmod tempor invidunt ut labore et dolore. <br>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br>
@@ -523,7 +480,7 @@
       </article>
       <!-- Mold production Area End-->
       <!-- Communication area Start-->
-      <article class="container mx-auto section bg-gradiend" data-aos="fade-up"
+      <article class="container mx-auto mt-24 bg-gradiend" data-aos="fade-up"
       data-aos-duration="3000">
          <div class="p-8">
             <div class="flex flex-col items-center justify-center p-6">
@@ -565,7 +522,7 @@
       </article>
       <!-- Communication area End-->
       <!-- News Area Start-->
-      <div class="container justify-center items-center text-center mx-auto section main-text font-bold">
+      <div class="container justify-center items-center text-center mx-auto mt-12 md:mt-24 lg:mt-24 main-text font-bold">
          <span>Sektörden Haberler</span>
       </div>
       <section class="container mx-auto">
@@ -934,68 +891,32 @@
          <!-- FooterEnd Area End-->
       </footer>
       <!-- Footer End-->
-      
-      <!-- Flowbite library Start-->
-      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-      <!-- Flowbite library End-->
-      <!-- DataAos Library Start-->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-         AOS.init({
-           delay: 200, // values from 0 to 3000, with step 50ms
-           duration: 1500, // values from 0 to 3000, with step 50ms
-           once: false, // whether animation should happen only once - while scrolling down
-           mirror: false, // whether elements should animate out while scrolling past them
-         });
-       </script>
-        <!-- DataAos Library End-->
+
+      <script src="style.js"></script>
       <!-- Tailwind Library Start-->
       <script src="tailwind.config.js"></script>
       <script src="https://cdn.tailwindcss.com/3.3.2"></script>
       <!-- Tailwind Library End-->
-      <script>
-         // Burger menus
-         document.addEventListener('DOMContentLoaded', function() {
-             // open
-             const burger = document.querySelectorAll('.navbar-burger');
-             const menu = document.querySelectorAll('.navbar-menu');
-         
-             if (burger.length && menu.length) {
-                 for (var i = 0; i < burger.length; i++) {
-                     burger[i].addEventListener('click', function() {
-                         for (var j = 0; j < menu.length; j++) {
-                             menu[j].classList.toggle('hidden');
-                         }
-                     });
-                 }
-             }
-         
-             // close
-             const close = document.querySelectorAll('.navbar-close');
-             const backdrop = document.querySelectorAll('.navbar-backdrop');
-         
-             if (close.length) {
-                 for (var i = 0; i < close.length; i++) {
-                     close[i].addEventListener('click', function() {
-                         for (var j = 0; j < menu.length; j++) {
-                             menu[j].classList.toggle('hidden');
-                         }
-                     });
-                 }
-             }
-         
-             if (backdrop.length) {
-                 for (var i = 0; i < backdrop.length; i++) {
-                     backdrop[i].addEventListener('click', function() {
-                         for (var j = 0; j < menu.length; j++) {
-                             menu[j].classList.toggle('hidden');
-                         }
-                     });
-                 }
-             }
-         });
+
+
+        <!-- DataAos Library Start-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+           AOS.init({
+             delay: 200, // values from 0 to 3000, with step 50ms
+             duration: 1500, // values from 0 to 3000, with step 50ms
+             once: false, // whether animation should happen only once - while scrolling down
+             mirror: false, // whether elements should animate out while scrolling past them
+           });
          </script>
+          <!-- DataAos Library End-->
+
+
+
+      <!-- Flowbite library Start-->
+      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+      <!-- Flowbite library End-->
    </body>
    
 </html>
