@@ -1,12 +1,14 @@
-window.addEventListener('scroll', function() {
-  var scrollTexts = document.getElementsByClassName('scroll-text');
-  var scrollPosition = window.scrollY;
+var prevScrollPos = window.pageYOffset;
+    var navbar = document.getElementById("navbar");
 
-  for (var i = 0; i < scrollTexts.length; i++) {
-    if (scrollPosition > 500) { // Scroll 500 piksel geçtiğinde
-      scrollTexts[i].style.color = 'black'; // Yazının rengini değiştir
-    } else {
-      scrollTexts[i].style.color = 'white'; // Yazının rengini başlangıç rengine geri döndür
-    }
-  }
-});
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        navbar.classList.remove("hidden");
+      } else {
+        navbar.classList.add("hidden");
+      }
+
+      prevScrollPos = currentScrollPos;
+    };

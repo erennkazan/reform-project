@@ -67,7 +67,15 @@ button[data-collapse-toggle="navbar-sticky"]:active {
     -webkit-text-stroke: 1px white;
     opacity: .1;
 }
-.scroll-text {
-    color: white; /* Başlangıç rengi */
-    transition: color 0.3s ease; /* Renk değişim animasyonu */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
+  .navbar.hidden {
+    transform: translateY(-100%);
+  }
+  
