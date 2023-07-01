@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -28,7 +29,7 @@
       <!-- Navbar Component Start -->
       <nav class="w-full md:w-full sm:w-full lg:w-full  bg-cover bg-no-repeat" style="background-image: url('img/drillbit.jpg'); background-size: 100% 720px;">
          <!-- Header Start --> 
-         <nav id="navbar" class=" top-0 left-0 w-full z-20 navbar">
+         <section id="navbar" class=" top-0 left-0 w-full z-20 navbar">
             <div class="container mx-auto  flex flex-wrap items-center justify-between">
               <a href="#" class="flex items-center">
                 <div class="flex items-center mt-3 mr-auto">
@@ -78,7 +79,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="hidden mx-auto w-full bg-slate-300 rounded-lg lg:bg-transparent shadow-lg h-44 lg:h-0 md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <div class="hidden mx-auto w-full bg-slate-300 rounded-lg lg:bg-transparent shadow-lg h-44 lg:h-0 lg:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul class="flex flex-col mt-4 md:p-0 md:mt-0 md:flex-row md:space-x-8">
                      <li class="text-blue-500 lg:text-white font-medium text-l ml-8 lg:text-xs scroll-text hover:text-blue-500"><a class="#" href="">KURUMSAL</a></li>
                      <li class="text-blue-500 lg:text-white font-medium text-l ml-8 mt-2 lg:mt-0 lg:text-xs scroll-text hover:text-blue-500"><a href="#">KALIP ÜRETİM</a></li>
@@ -88,10 +89,10 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </section>
           
          <!-- Header End -->
-         <!-- --> 
+         <!-- HeaderInfo Start--> 
          <section class="container flex flex-col justify-between mx-auto w-full relative"  data-aos="fade-right">
             <div class="flex flex-col justify-center items-center mt-64 lg:flex lg:flex-row lg:items-end lg:justify-start">
                <div class="">
@@ -133,6 +134,7 @@
                </div>
             </div>
          </section>
+         <!-- HeaderInfo End--> 
          <div class="absolute w-full mx-auto top-0 left-0" data-aos="fade-right">
             <p class="text-8xl text-center text-transparent font-bold reform-text mt-48 mx-auto  lg:ml-96 lg:text-9xl lg:flex lg:mt-52 xl:flex ">REFORM KALIP</p>
          </div>
@@ -892,13 +894,12 @@
       </footer>
       <!-- Footer End-->
 
+      <!--Javascript File-->      
       <script src="style.js"></script>
       <!-- Tailwind Library Start-->
       <script src="tailwind.config.js"></script>
       <script src="https://cdn.tailwindcss.com/3.3.2"></script>
       <!-- Tailwind Library End-->
-
-
         <!-- DataAos Library Start-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
@@ -910,9 +911,6 @@
            });
          </script>
           <!-- DataAos Library End-->
-
-
-
       <!-- Flowbite library Start-->
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
