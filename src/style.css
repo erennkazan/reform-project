@@ -85,3 +85,6 @@ button[data-collapse-toggle="navbar-sticky"]:active {
   .hover-scale:hover {
     transform: scale(1.1);
   }
+  .table-width{
+    width: 384px;
+  }

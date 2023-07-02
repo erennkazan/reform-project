@@ -12,3 +12,17 @@ var prevScrollPos = window.pageYOffset;
 
       prevScrollPos = currentScrollPos;
     };
+    window.addEventListener('scroll', function() {
+      var navbar = document.getElementById('navbar');
+      var scrollPosition = window.scrollY;
+      var bgSlate = 'bg-slate-400';
+      var bgTransparent = 'bg-transparent';
+  
+      if (scrollPosition > 0) {
+        navbar.classList.add(bgSlate);
+        navbar.classList.remove(bgTransparent);
+      } else {
+        navbar.classList.remove(bgSlate);
+        navbar.classList.add(bgTransparent);
+      }
+    });
