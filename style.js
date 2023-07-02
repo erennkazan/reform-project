@@ -15,7 +15,7 @@ var prevScrollPos = window.pageYOffset;
     window.addEventListener('scroll', function() {
       var navbar = document.getElementById('navbar');
       var scrollPosition = window.scrollY;
-      var bgSlate = 'bg-slate-400';
+      var bgSlate = 'bg-blue-500';
       var bgTransparent = 'bg-transparent';
   
       if (scrollPosition > 0) {
