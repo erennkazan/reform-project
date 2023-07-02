@@ -18,22 +18,10 @@ body {
 }
 .text-color{
     color: #00235B;
-}   
-.comminication{
-    font-size: 35px;
-}
-.button-ml{
-    margin-left: 80px;
-}
-.main-margin{
-    margin-top: 96px;
 }
 .bg-gradiend{
     background: rgb(34,76,144);
     background: linear-gradient(266deg, rgba(34,76,144,1) 19%, rgba(17,38,78,1) 100%);
-}
-.top{
-   margin-top: 150px;
 }
 .footer-bg-color{
     background: rgb(34,76,144);
