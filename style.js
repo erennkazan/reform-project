@@ -1,3 +1,4 @@
+ //Hide header when scroll down
 var prevScrollPos = window.pageYOffset;
     var navbar = document.getElementById("navbar");
 
@@ -12,6 +13,7 @@ var prevScrollPos = window.pageYOffset;
 
       prevScrollPos = currentScrollPos;
     };
+    //Change header color when scroll up
     window.addEventListener('scroll', function() {
       var navbar = document.getElementById('navbar');
       var scrollPosition = window.scrollY;
