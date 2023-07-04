@@ -1,6 +1,45 @@
-body {
-  overflow-x: hidden;
+.navbar-menu{
+  max-width: 1364px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 20;
   }
+  .navbar.hidden {
+  transform: translateY(-100%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .button-bg-color{
   background-color: #1F458E;
   }
@@ -51,17 +90,7 @@ body {
   -webkit-text-stroke: 1px white;
   opacity: .1;
   }
-  .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
-  .navbar.hidden {
-  transform: translateY(-100%);
-  }
+ 
   .hover-scale {
   transition: transform 0.2s ease-in-out;
   }
